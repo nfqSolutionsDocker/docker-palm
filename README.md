@@ -18,7 +18,7 @@ Add in docker-compose file 'PYTHON_FILES' variable to execute with python 3.4 in
 For example, docker-compose.yml:
 ```
 app:
- image: nfqsolutions/python:3.4-jdk7
+ image: nfqsolutions/palm
  restart: always
  environment:
   - PACKAGES=
