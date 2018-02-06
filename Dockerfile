@@ -4,7 +4,8 @@ MAINTAINER solutions@nfq.com
 
 
 RUN apt-get update && \
-    apt-get install -y supervisor gcc mysql-client mysql-server default-libmysqlclient-dev
+    apt-get install -y supervisor gcc mysql-client mysql-server default-libmysqlclient-dev librdkafka-dev && \
+    pip install confluent-kafka
 
 # Variables de entorno
 ENV RPM_PATH=/solutions/app/rpm \
